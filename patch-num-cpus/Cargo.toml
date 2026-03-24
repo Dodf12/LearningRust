@@ -1,0 +1,13 @@
+[package]
+name = "patch-num-cpus"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+#num_cpus = "1.0"
+# Including the num_cpus library dependency.
+
+#Now we need to modify the dependency so instead of using the main library, 
+#it uses our modified one that we have locally
+
+num_cpus = {path = "num_cpus"}
